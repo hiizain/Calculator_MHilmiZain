@@ -1,0 +1,89 @@
+body {
+    background-color: rgb(180, 177, 207);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.calculator {
+    width: 350px;
+    background-color: rgb(233, 233, 233);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px 0px, rgba(0, 0, 0, 0.19) 0px 6px 20px 0px;
+    text-align: center;
+    margin: 25px auto;
+    border-radius: 15px;
+}
+
+.top-side {
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.calculator-screen {
+    width: 90%;
+    height: 75px;
+    background-color: white;
+    color: rgb(156, 173, 206);
+    text-align: right;
+    font-size: 30px;
+    box-sizing: border-box;
+    padding: 0px 20px;
+    margin: 20px 0px;
+    border-radius: 75px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(156, 173, 206);
+    border-image: initial;
+}
+
+.row {
+    display: flex;
+}
+
+.calculator-keys {
+    width: 90%;
+    padding-bottom: 25px;
+    margin: 0px auto;
+}
+
+button {
+    height: 60px;
+    background-color: white;
+    font-size: 24px;
+    color: rgb(156, 173, 206);
+    width: 25%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(156, 173, 206);
+    border-image: initial;
+    outline: none;
+    border-radius: 100%;
+    margin: 5px 10px;
+}
+
+.all-clear:hover, .clear:hover {
+    background-color: rgb(212, 175, 185);
+    color: white;
+}
+
+.equal-sign:hover, .operator:hover {
+    background-color: rgb(173, 247, 182);
+    color: white;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(148, 216, 165);
+    border-image: initial;
+}
+
+.number:hover, .decimal:hover, .percentage:hover {
+    background-color: rgb(156, 173, 206);
+    color: white;
+}
+
+@media (max-width: 670px){
+    .calculator{
+        margin: 5px auto;
+    }
+}
